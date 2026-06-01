@@ -72,4 +72,14 @@ document.addEventListener("DOMContentLoaded", () => {
   );
 
   revealSections.forEach((el) => sectionObserver.observe(el));
+
+  const onContact =
+    location.pathname === "/contact" || location.pathname.endsWith("/contact.html");
+  if (onContact && new URLSearchParams(location.search).get("sent") === "1") {
+    const success = document.getElementById("form-success");
+    if (success) {
+      success.hidden = false;
+      success.focus();
+    }
+  }
 });

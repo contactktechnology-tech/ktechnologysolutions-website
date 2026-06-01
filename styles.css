@@ -1172,6 +1172,20 @@ section,
   color: var(--kt-text-primary);
 }
 
+.form-success {
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--kt-green-border);
+  background: rgba(47, 158, 68, 0.08);
+}
+
+.form-success p {
+  margin: 0;
+  color: var(--kt-text-primary);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
 .form-submit {
   margin-top: 40px;
 }

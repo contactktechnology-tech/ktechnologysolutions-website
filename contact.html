@@ -64,8 +64,20 @@
           <div class="contact-layout">
 
             <div class="contact-form-col">
-              <!-- Replace with your Formspree form ID at formspree.io -->
-              <form class="consultation-form" action="https://formspree.io/f/xpwzgvqr" method="POST" novalidate>
+              <div class="form-success" id="form-success" role="status" hidden tabindex="-1">
+                <p>Thank you. Your enquiry has been received. We will respond with clear next steps shortly.</p>
+              </div>
+              <form
+                class="consultation-form"
+                action="https://formspree.io/f/mdajqnog"
+                method="POST"
+              >
+                <input type="hidden" name="_subject" value="KTechnology Solutions — Consultation Enquiry">
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="https://www.ktechnologysolutions.co.uk/contact?sent=1"
+                >
                 <div class="form-field">
                   <label for="name">Full Name</label>
                   <input type="text" id="name" name="name" autocomplete="name" required>
