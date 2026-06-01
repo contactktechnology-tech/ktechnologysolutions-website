@@ -8,7 +8,7 @@
   "redirects": [
     {
       "source": "/favicon.ico",
-      "destination": "/assets/logo.svg",
+      "destination": "/assets/ktech-logo.png",
       "permanent": true
     }
   ],
