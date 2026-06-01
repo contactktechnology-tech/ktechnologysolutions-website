@@ -154,9 +154,7 @@ p a:hover {
   display: block;
   width: 100%;
   height: auto;
-  max-height: clamp(72px, 14vw, 120px);
-  object-fit: cover;
-  object-position: left center;
+  vertical-align: top;
 }
 
 .site-header--banner .nav-below-banner {
@@ -166,7 +164,11 @@ p a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.65rem var(--gutter);
+  width: 100%;
+  max-width: none;
+  min-height: 72px;
+  margin: 0;
+  padding: 16px max(var(--gutter), calc((100vw - var(--content-max)) / 2));
   border-bottom: 1px solid var(--kt-border);
   background: rgba(5, 8, 22, 0.94);
   backdrop-filter: blur(14px);
@@ -175,6 +177,11 @@ p a:hover {
 .site-header--banner .nav-below-banner .nav-links {
   flex: 1;
   justify-content: center;
+}
+
+.site-header--banner .nav-toggle {
+  position: absolute;
+  right: max(var(--gutter), calc((100vw - var(--content-max)) / 2));
 }
 
 .nav {
@@ -788,14 +795,13 @@ p a:hover {
     display: flex;
   }
 
-  .site-header--banner .nav-toggle {
-    position: absolute;
-    right: var(--gutter);
-  }
-
   .site-header--banner .nav-below-banner {
     justify-content: flex-end;
-    padding-right: calc(var(--gutter) + 3rem);
+    padding-right: max(var(--gutter), calc((100vw - var(--content-max)) / 2));
+  }
+
+  .site-header--banner .nav-below-banner .nav-links {
+    justify-content: center;
   }
 
   .nav-links {
