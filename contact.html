@@ -5,26 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
-      content="Contact KTechnology Solutions for managed IT, cyber security, network projects, cloud migration, and technology audits across the UK."
+      content="Request a technology consultation with KTechnology Solutions. Tell us about your organisation and we will respond with clear, proportionate next steps."
     >
-    <title>Contact | KTechnology Solutions</title>
+    <title>Contact | KTechnology Solutions — Request a Consultation</title>
     <link rel="canonical" href="https://www.ktechnologysolutions.co.uk/contact">
     <link rel="icon" href="/assets/ktechnology-header-logo.png" type="image/png">
-    <link rel="stylesheet" href="/styles.css?v=20260601-header-v2">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Bentham&family=Raleway:wght@300;400;500;600&family=Lato:ital,wght@0,300;0,400;1,300&display=swap"
       rel="stylesheet"
     >
+    <link rel="stylesheet" href="/styles.css?v=20260601-full-v1">
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
+
     <header class="site-header site-header--banner">
       <div class="header-banner">
         <a href="/" aria-label="KTechnology Solutions home">
           <img
-            src="/assets/ktechnology-header-logo.png?v=20260601-header-v2"
+            src="/assets/ktechnology-header-logo.png?v=20260601-full-v1"
             alt="KTechnology Solutions — IT Infrastructure and Cyber Security — Business Systems Deployment and Network Architecture"
             width="784"
             height="295"
@@ -43,84 +44,150 @@
           <a href="/services">Services</a>
           <a href="/approach">Approach</a>
           <a href="/about">About</a>
-          <a href="/contact" class="nav-cta" aria-current="page">Request a consultation</a>
+          <a href="/contact" class="nav-cta cta-btn" aria-current="page">Request a Consultation</a>
         </div>
       </nav>
     </header>
 
     <main id="main">
       <section class="page-hero">
-        <div class="container">
-          <span class="eyebrow">Contact</span>
-          <div class="section-sep" aria-hidden="true"></div>
-          <h1>Request a <em>consultation</em></h1>
-          <p class="page-hero-sub">
-            Tell us about your organisation, sites, and technology priorities. We will respond with clear,
-            proportionate next steps — no pressure, no generic MSP scripts.
-          </p>
+        <div class="section-inner">
+          <span class="eyebrow">Technology Consultation</span>
+          <div class="section-sep section-sep--left" aria-hidden="true"></div>
+          <h1>Request a<br><em>Technology Consultation</em></h1>
+          <p class="page-hero-sub">Tell us about your organisation and the technology challenge you are working through. We will respond with clear, proportionate next steps — no sales script, no pressure.</p>
         </div>
       </section>
 
-      <section class="section reveal">
-        <div class="container contact-grid">
-          <div>
-            <header class="section-header">
-              <h2>Get in touch</h2>
-            </header>
-            <dl>
-              <div class="contact-detail">
-                <dt>Email</dt>
-                <dd>
-                  <a href="mailto:contact@ktechnologysolutions.co.uk">contact@ktechnologysolutions.co.uk</a>
-                </dd>
+      <section class="page-section">
+        <div class="section-inner">
+          <div class="contact-layout">
+
+            <div class="contact-form-col">
+              <!-- Replace with your Formspree form ID at formspree.io -->
+              <form class="consultation-form" action="https://formspree.io/f/xpwzgvqr" method="POST" novalidate>
+                <div class="form-field">
+                  <label for="name">Full Name</label>
+                  <input type="text" id="name" name="name" autocomplete="name" required>
+                </div>
+                <div class="form-field">
+                  <label for="organisation">Organisation</label>
+                  <input type="text" id="organisation" name="organisation" autocomplete="organization" required>
+                </div>
+                <div class="form-field">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" autocomplete="email" required>
+                </div>
+                <div class="form-field">
+                  <label for="phone">Phone Number (optional)</label>
+                  <input type="tel" id="phone" name="phone" autocomplete="tel">
+                </div>
+                <div class="form-field">
+                  <label for="service">Primary Area of Interest</label>
+                  <select id="service" name="service">
+                    <option value="">Select a service area</option>
+                    <option>IT Infrastructure</option>
+                    <option>Cyber Security</option>
+                    <option>Network Architecture</option>
+                    <option>Cloud &amp; Devices</option>
+                    <option>Business Systems</option>
+                    <option>Communications</option>
+                    <option>Corporate Support</option>
+                    <option>Operational Resilience</option>
+                    <option>General Enquiry</option>
+                  </select>
+                </div>
+                <div class="form-field">
+                  <label for="message">Tell us about your technology challenge</label>
+                  <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <div class="form-submit">
+                  <button type="submit" class="cta-btn">Send Enquiry</button>
+                </div>
+              </form>
+            </div>
+
+            <div class="contact-info-col">
+              <div class="contact-info-block">
+                <span class="eyebrow">What Happens Next</span>
+                <div class="section-sep section-sep--left" aria-hidden="true"></div>
+                <div class="approach-timeline" style="max-width: none; margin-top: 24px;">
+                  <div class="approach-step">
+                    <div class="step-marker"><span class="step-number">01</span><div class="step-line" aria-hidden="true"></div></div>
+                    <div class="step-content"><h3>We Review Your Enquiry</h3><p>Every enquiry is read by a member of the team — not triaged by automated process. We assess your situation and determine the right first response.</p></div>
+                  </div>
+                  <div class="approach-step">
+                    <div class="step-marker"><span class="step-number">02</span><div class="step-line" aria-hidden="true"></div></div>
+                    <div class="step-content"><h3>We Respond With Clarity</h3><p>Our response will be direct and specific to your situation — outlining what we can do, what the next step looks like, and what you should expect from us.</p></div>
+                  </div>
+                  <div class="approach-step">
+                    <div class="step-marker"><span class="step-number">03</span></div>
+                    <div class="step-content"><h3>We Agree a Starting Point</h3><p>If there is a good fit, we will agree a structured starting point — whether that is a technology audit, a consultation, or a defined project scope.</p></div>
+                  </div>
+                </div>
               </div>
-              <div class="contact-detail">
-                <dt>Coverage</dt>
-                <dd>United Kingdom — remote and on-site delivery</dd>
+              <div class="contact-direct" style="margin-top: 48px; padding-top: 48px; border-top: 1px solid var(--kt-border);">
+                <span class="eyebrow">Direct Contact</span>
+                <a href="mailto:info@ktechnologysolutions.co.uk" class="contact-email-link">info@ktechnologysolutions.co.uk</a>
               </div>
-              <div class="contact-detail">
-                <dt>Typical enquiries</dt>
-                <dd>Managed IT, security reviews, network projects, M365, audits</dd>
-              </div>
-            </dl>
-          </div>
-          <div>
-            <header class="section-header">
-              <h2>Helpful context to include</h2>
-            </header>
-            <ul class="enquiry-list">
-              <li>Organisation type and number of sites</li>
-              <li>Current pain points (support, security, network, cloud)</li>
-              <li>Approximate user or device count</li>
-              <li>Any compliance or sector requirements</li>
-              <li>Desired timeframe</li>
-            </ul>
+            </div>
+
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="container footer-grid">
-        <div class="footer-brand">
-          <strong>KTechnology Solutions</strong>
-          <p>Technology infrastructure and cyber security for UK businesses.</p>
+    <footer class="site-footer" role="contentinfo">
+      <div class="footer-main">
+        <div class="footer-inner">
+
+          <div class="footer-brand">
+            <p class="footer-brand-name">KTECHNOLOGY SOLUTIONS</p>
+            <p class="footer-brand-sub">Technology Infrastructure &amp; Cyber Security</p>
+            <p class="footer-brand-desc">Designing, deploying, securing, and supporting the technology infrastructure that UK businesses rely on.</p>
+            <div class="footer-ecosystem-links">
+              <span class="footer-ecosystem-label">Part of the K Gabriel Kaseke ecosystem</span>
+              <div class="footer-eco-row">
+                <a href="https://kgabrielkaseke.com" target="_blank" rel="noopener" class="footer-eco-link">kgabrielkaseke.com</a>
+                <span aria-hidden="true">·</span>
+                <a href="https://www.kabsolutions.co.uk" target="_blank" rel="noopener" class="footer-eco-link">kabsolutions.co.uk</a>
+              </div>
+            </div>
+          </div>
+
+          <nav class="footer-nav" aria-label="Footer navigation">
+            <ul>
+              <li><a href="/services">Services</a></li>
+              <li><a href="/approach">Approach</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="/contact">Contact</a></li>
+            </ul>
+          </nav>
+
+          <div class="footer-cta">
+            <a href="/contact" class="cta-btn">Request a Consultation</a>
+            <p class="footer-email">
+              <a href="mailto:info@ktechnologysolutions.co.uk">info@ktechnologysolutions.co.uk</a>
+            </p>
+          </div>
+
         </div>
-        <nav class="footer-nav" aria-label="Footer navigation">
-          <a href="/services">Services</a>
-          <a href="/approach">Approach</a>
-          <a href="/about">About</a>
-          <a href="/contact">Contact</a>
-        </nav>
-        <nav class="footer-nav" aria-label="Ecosystem links">
-          <a href="https://kgabrielkaseke.com" rel="noopener noreferrer">K Gabriel Kaseke</a>
-          <a href="https://www.kabsolutions.co.uk" rel="noopener noreferrer">KABSolutions</a>
-        </nav>
       </div>
-      <div class="container footer-bottom">
-        <p>&copy; <span data-year></span> KTechnology Solutions. All rights reserved.</p>
+
+      <div class="footer-legal">
+        <div class="footer-legal-inner">
+          <p class="footer-copyright">&copy; <span data-year></span> KTechnology Solutions &mdash; Technology Infrastructure &amp; Cyber Security</p>
+          <nav class="footer-legal-links" aria-label="Legal navigation">
+            <a href="/terms-of-use">Terms of Use</a>
+            <span aria-hidden="true">|</span>
+            <a href="/privacy-policy">Privacy &amp; Cookie Policy</a>
+            <span aria-hidden="true">|</span>
+            <a href="/trading-terms">Trading Terms</a>
+          </nav>
+        </div>
       </div>
     </footer>
+
     <script type="module" src="/script.js"></script>
   </body>
 </html>

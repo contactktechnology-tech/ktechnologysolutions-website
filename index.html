@@ -25,7 +25,7 @@
         "@type": "ProfessionalService",
         "name": "KTechnology Solutions",
         "url": "https://www.ktechnologysolutions.co.uk/",
-        "email": "contact@ktechnologysolutions.co.uk",
+        "email": "info@ktechnologysolutions.co.uk",
         "description": "Technology infrastructure, cyber security, and corporate IT delivery for UK businesses.",
         "areaServed": { "@type": "Country", "name": "United Kingdom" },
         "serviceType": [
@@ -44,7 +44,7 @@
       href="https://fonts.googleapis.com/css2?family=Bentham&family=Raleway:wght@300;400;500;600&family=Lato:ital,wght@0,300;0,400;1,300&display=swap"
       rel="stylesheet"
     >
-    <link rel="stylesheet" href="/styles.css?v=20260601-header-v2">
+    <link rel="stylesheet" href="/styles.css?v=20260601-full-v1">
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -53,7 +53,7 @@
       <div class="header-banner">
         <a href="/" aria-label="KTechnology Solutions home">
           <img
-            src="/assets/ktechnology-header-logo.png?v=20260601-header-v2"
+            src="/assets/ktechnology-header-logo.png?v=20260601-full-v1"
             alt="KTechnology Solutions — IT Infrastructure and Cyber Security — Business Systems Deployment and Network Architecture"
             width="784"
             height="295"
@@ -68,192 +68,248 @@
           <span class="sr-only">Open menu</span>
         </button>
         <div class="nav-links" id="site-menu">
-          <a href="/">Home</a>
+          <a href="/" aria-current="page">Home</a>
           <a href="/services">Services</a>
           <a href="/approach">Approach</a>
           <a href="/about">About</a>
-          <a href="/contact" class="nav-cta">Request a consultation</a>
+          <a href="/contact" class="nav-cta cta-btn">Request a Consultation</a>
         </div>
       </nav>
     </header>
 
     <main id="main">
       <section class="hero" aria-label="Homepage hero">
-        <div class="container hero-inner">
+        <div class="hero-grid-overlay" aria-hidden="true"></div>
+        <div class="hero-inner">
           <span class="eyebrow">Technology Infrastructure &amp; Cyber Security</span>
-          <h1>Technology Infrastructure Built for <em>Secure, Scalable</em> Business Operations</h1>
+          <h1>Technology Infrastructure Built for<br><em>Secure, Scalable</em> Business Operations</h1>
           <p class="hero-sub">
-            KTechnology Solutions helps businesses design, deploy, secure, and maintain the technology
-            infrastructure that supports modern operations, productivity, communication, and growth.
+            KTechnology Solutions helps businesses design, deploy, secure, and maintain the technology infrastructure that supports modern operations, productivity, communication, and growth.
           </p>
           <div class="hero-actions">
-            <a class="cta-btn" href="/contact">Request a consultation</a>
-            <a class="cta-secondary" href="/services">Explore our services</a>
+            <a href="/contact" class="cta-btn">Request a Consultation</a>
+            <a href="/services" class="cta-secondary">Explore Our Services</a>
           </div>
         </div>
       </section>
 
-      <div class="authority-strip">
-        <div class="container authority-inner">
+      <div class="authority-strip" aria-label="Positioning signals">
+        <div class="authority-inner">
           <div class="authority-item">
             <span class="authority-label">Discipline</span>
             <span class="authority-value">Infrastructure Before Improvisation</span>
           </div>
+          <div class="authority-divider" aria-hidden="true"></div>
           <div class="authority-item">
             <span class="authority-label">Focus</span>
             <span class="authority-value">Secure, Reliable UK Operations</span>
           </div>
+          <div class="authority-divider" aria-hidden="true"></div>
           <div class="authority-item">
             <span class="authority-label">Delivery</span>
             <span class="authority-value">Design, Deploy, Protect, Support</span>
           </div>
+          <div class="authority-divider" aria-hidden="true"></div>
           <div class="authority-item">
             <span class="authority-label">Ecosystem</span>
-            <span class="authority-value">Aligned with K Gabriel Kaseke</span>
+            <span class="authority-value">K Gabriel Kaseke Group</span>
           </div>
         </div>
       </div>
 
-      <section class="section reveal" id="ecosystem">
-        <div class="container">
-          <header class="section-header">
-            <h2>Part of a disciplined business ecosystem</h2>
-            <p>
-              KTechnology Solutions is the practical technology engine — distinct from strategic authority
-              and business intelligence, but aligned in standards and intent.
-            </p>
-          </header>
+      <section class="page-section" aria-label="Services overview">
+        <div class="section-inner">
+          <span class="eyebrow">Services</span>
+          <div class="section-sep section-sep--left" aria-hidden="true"></div>
+          <h2>Corporate Technology Capability.<br><em>Eight Disciplines. One Partner.</em></h2>
+          <p class="section-intro">Technology infrastructure without the noise of generic IT templates. Eight focused disciplines delivered with professional precision.</p>
+
+          <div class="services-grid">
+
+            <article class="service-card">
+              <span class="service-code">01</span>
+              <h3 class="service-title">IT Infrastructure</h3>
+              <p class="service-desc">Servers, endpoints, and core systems planned for stability, scale, and clear ownership.</p>
+              <p class="service-tagline">Stable. Scalable. Owned.</p>
+              <a href="/services#infrastructure" class="service-link">Explore Service <span aria-hidden="true">→</span></a>
+            </article>
+
+            <article class="service-card">
+              <span class="service-code sec">SEC</span>
+              <h3 class="service-title">Cyber Security</h3>
+              <p class="service-desc">Practical protection, policy alignment, and guidance that respects operational reality.</p>
+              <p class="service-tagline">Protected. Policy-aligned. Practical.</p>
+              <a href="/services#cyber" class="service-link">Explore Service <span aria-hidden="true">→</span></a>
+            </article>
+
+            <article class="service-card">
+              <span class="service-code">NET</span>
+              <h3 class="service-title">Network Architecture</h3>
+              <p class="service-desc">Business networks, Wi-Fi, and connectivity designed for multi-site and office environments.</p>
+              <p class="service-tagline">Connected. Resilient. Designed to scale.</p>
+              <a href="/services#network" class="service-link">Explore Service <span aria-hidden="true">→</span></a>
+            </article>
+
+            <article class="service-card">
+              <span class="service-code">CLD</span>
+              <h3 class="service-title">Cloud &amp; Devices</h3>
+              <p class="service-desc">Microsoft 365, cloud migration, device management, backup, and recovery you can trust.</p>
+              <p class="service-tagline">Migrated. Managed. Recoverable.</p>
+              <a href="/services#cloud" class="service-link">Explore Service <span aria-hidden="true">→</span></a>
+            </article>
+
+            <article class="service-card">
+              <span class="service-code">SYS</span>
+              <h3 class="service-title">Business Systems</h3>
+              <p class="service-desc">Deployment and integration of operational systems that teams actually use.</p>
+              <p class="service-tagline">Deployed. Integrated. Adopted.</p>
+              <a href="/services#systems" class="service-link">Explore Service <span aria-hidden="true">→</span></a>
+            </article>
+
+            <article class="service-card">
+              <span class="service-code">COM</span>
+              <h3 class="service-title">Communications</h3>
+              <p class="service-desc">Voice, collaboration, and connectivity infrastructure for distributed teams.</p>
+              <p class="service-tagline">Clear. Reliable. Built for distributed work.</p>
+              <a href="/services#comms" class="service-link">Explore Service <span aria-hidden="true">→</span></a>
+            </article>
+
+            <article class="service-card">
+              <span class="service-code">SUP</span>
+              <h3 class="service-title">Corporate Support</h3>
+              <p class="service-desc">Managed IT and technology support structured for professional service standards.</p>
+              <p class="service-tagline">Responsive. Structured. Professional.</p>
+              <a href="/services#support" class="service-link">Explore Service <span aria-hidden="true">→</span></a>
+            </article>
+
+            <article class="service-card">
+              <span class="service-code res">RES</span>
+              <h3 class="service-title">Operational Resilience</h3>
+              <p class="service-desc">Audits, continuity thinking, and infrastructure that keeps working under pressure.</p>
+              <p class="service-tagline">Audited. Resilient. Always operational.</p>
+              <a href="/services#resilience" class="service-link">Explore Service <span aria-hidden="true">→</span></a>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="page-section ecosystem-section" aria-label="Business ecosystem">
+        <div class="section-inner">
+          <span class="eyebrow">The Ecosystem</span>
+          <div class="section-sep" aria-hidden="true"></div>
+          <h2>Part of a Disciplined<br><em>Business Ecosystem</em></h2>
+          <p class="section-intro" style="margin: 20px auto 56px; text-align: center;">KTechnology Solutions is the practical technology engine — distinct from strategic authority and business intelligence, but aligned in standards and intent.</p>
+
           <div class="ecosystem-grid">
-            <article class="eco-card">
-              <p class="eco-role">Strategic authority</p>
-              <h3>K Gabriel Kaseke</h3>
-              <p>Executive direction, thought leadership, and strategic positioning across the group.</p>
-              <a class="eco-link" href="https://kgabrielkaseke.com" rel="noopener noreferrer">kgabrielkaseke.com</a>
-            </article>
-            <article class="eco-card">
-              <p class="eco-role">Business Intelligence &amp; Analytics</p>
-              <h3>KABSolutions</h3>
-              <p>Data, analytics, and intelligence that turn fragmented information into commercial decisions.</p>
-              <a class="eco-link" href="https://www.kabsolutions.co.uk" rel="noopener noreferrer">kabsolutions.co.uk</a>
-            </article>
-            <article class="eco-card eco-card--current">
-              <p class="eco-role">Technology Infrastructure</p>
-              <h3>KTechnology Solutions</h3>
-              <p>Builds, secures, and supports the systems businesses rely on every day.</p>
-              <span class="eco-link">You are here</span>
-            </article>
+
+            <div class="ecosystem-card">
+              <span class="ecosystem-label">Strategic Authority</span>
+              <h3 class="ecosystem-brand">K Gabriel Kaseke</h3>
+              <p class="ecosystem-desc">Executive direction, thought leadership, and strategic positioning across the group.</p>
+              <a href="https://kgabrielkaseke.com" class="ecosystem-link" target="_blank" rel="noopener">kgabrielkaseke.com <span aria-hidden="true">→</span></a>
+            </div>
+
+            <div class="ecosystem-card">
+              <span class="ecosystem-label">Business Intelligence &amp; Analytics</span>
+              <h3 class="ecosystem-brand">KABSolutions</h3>
+              <p class="ecosystem-desc">Data, analytics, and intelligence that turn fragmented information into commercial decisions and measurable growth.</p>
+              <a href="https://www.kabsolutions.co.uk" class="ecosystem-link" target="_blank" rel="noopener">kabsolutions.co.uk <span aria-hidden="true">→</span></a>
+            </div>
+
+            <div class="ecosystem-card ecosystem-card--current">
+              <span class="ecosystem-label">Technology Infrastructure</span>
+              <h3 class="ecosystem-brand">KTechnology Solutions</h3>
+              <p class="ecosystem-desc">Builds, secures, and supports the systems businesses rely on — from infrastructure to operational resilience.</p>
+              <span class="ecosystem-current-mark">You are here</span>
+            </div>
+
           </div>
         </div>
       </section>
 
-      <section class="section section-muted reveal" id="services">
-        <div class="container">
-          <header class="section-header">
-            <div class="section-sep" aria-hidden="true"></div>
-            <h2>What we deliver</h2>
-            <p>
-              Corporate technology capability — from infrastructure planning to ongoing resilience —
-              without the noise of generic IT templates.
-            </p>
-          </header>
-          <div class="card-grid card-grid--4">
-            <article class="card">
-              <span class="card-icon card-icon--blue">IT</span>
-              <h3>IT infrastructure</h3>
-              <p>Servers, endpoints, and core systems planned for stability, scale, and clear ownership.</p>
-            </article>
-            <article class="card">
-              <span class="card-icon card-icon--green">SEC</span>
-              <h3>Cyber security</h3>
-              <p>Practical protection, policy alignment, and guidance that respects operational reality.</p>
-            </article>
-            <article class="card">
-              <span class="card-icon card-icon--gold">NET</span>
-              <h3>Network architecture</h3>
-              <p>Business networks, Wi‑Fi, and connectivity designed for multi-site and office environments.</p>
-            </article>
-            <article class="card">
-              <span class="card-icon card-icon--blue">CLD</span>
-              <h3>Cloud &amp; devices</h3>
-              <p>Microsoft 365, cloud migration, device management, backup, and recovery you can trust.</p>
-            </article>
-            <article class="card">
-              <span class="card-icon card-icon--gold">SYS</span>
-              <h3>Business systems</h3>
-              <p>Deployment and integration of operational systems that teams actually use.</p>
-            </article>
-            <article class="card">
-              <span class="card-icon card-icon--blue">COM</span>
-              <h3>Communications</h3>
-              <p>Voice, collaboration, and connectivity infrastructure for distributed teams.</p>
-            </article>
-            <article class="card">
-              <span class="card-icon card-icon--green">SUP</span>
-              <h3>Corporate support</h3>
-              <p>Managed IT and technology support structured for professional service standards.</p>
-            </article>
-            <article class="card">
-              <span class="card-icon card-icon--green">RES</span>
-              <h3>Operational resilience</h3>
-              <p>Audits, continuity thinking, and infrastructure that keeps working under pressure.</p>
-            </article>
+      <section class="page-section" style="border-top: 1px solid var(--kt-border);">
+        <div class="section-inner">
+          <span class="eyebrow">Clients</span>
+          <div class="section-sep section-sep--left" aria-hidden="true"></div>
+          <h2>Who We Work With</h2>
+          <p class="section-intro">UK organisations that need dependable infrastructure — not consumer repair rhetoric.</p>
+
+          <div class="client-grid">
+            <div class="client-item"><span class="client-mark" aria-hidden="true">—</span><p>SMEs &amp; professional service firms</p></div>
+            <div class="client-item"><span class="client-mark" aria-hidden="true">—</span><p>Facilities management companies</p></div>
+            <div class="client-item"><span class="client-mark" aria-hidden="true">—</span><p>Clinics &amp; care providers</p></div>
+            <div class="client-item"><span class="client-mark" aria-hidden="true">—</span><p>Hospitality &amp; retail businesses</p></div>
+            <div class="client-item"><span class="client-mark" aria-hidden="true">—</span><p>Offices &amp; multi-site businesses</p></div>
+            <div class="client-item"><span class="client-mark" aria-hidden="true">—</span><p>Local authorities</p></div>
+            <div class="client-item"><span class="client-mark" aria-hidden="true">—</span><p>Subcontract &amp; project delivery partners</p></div>
+            <div class="client-item"><span class="client-mark" aria-hidden="true">—</span><p>Larger organisations needing regional technical delivery</p></div>
           </div>
-          <p class="section-actions">
-            <a class="cta-secondary" href="/services">View all services</a>
-          </p>
         </div>
       </section>
 
-      <section class="section reveal">
-        <div class="container">
-          <header class="section-header">
-            <h2>Who we work with</h2>
-            <p>UK organisations that need dependable infrastructure — not consumer repair rhetoric.</p>
-          </header>
-          <ul class="tag-list">
-            <li>SMEs &amp; professional services</li>
-            <li>Facilities management</li>
-            <li>Clinics &amp; care providers</li>
-            <li>Hospitality &amp; retail</li>
-            <li>Offices &amp; multi-site businesses</li>
-            <li>Local authorities</li>
-            <li>Subcontract &amp; project delivery partners</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="cta-band reveal">
-        <div class="container narrow">
-          <h2>Ready to strengthen your technology foundation?</h2>
-          <p>
-            Whether you need managed support, a network deployment, or a structured technology audit,
-            we will respond with clear, proportionate next steps.
-          </p>
-          <a class="cta-btn" href="/contact">Request a consultation</a>
+      <section class="page-section cta-section" style="border-top: 1px solid var(--kt-border);">
+        <div class="section-inner" style="text-align: center;">
+          <span class="eyebrow">Technology Consultation</span>
+          <div class="section-sep" aria-hidden="true"></div>
+          <h2>Ready to Strengthen Your<br><em>Technology Foundation?</em></h2>
+          <p style="max-width: 520px; margin: 0 auto 48px; font-size: 1.05rem;">Whether you need managed support, a network deployment, or a structured technology audit, we will respond with clear, proportionate next steps.</p>
+          <div style="display: flex; gap: 24px; justify-content: center; align-items: center; flex-wrap: wrap;">
+            <a href="/contact" class="cta-btn">Request a Consultation</a>
+            <a href="/services" class="cta-secondary">View All Services</a>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="container footer-grid">
-        <div class="footer-brand">
-          <strong>KTechnology Solutions</strong>
-          <p>Technology infrastructure and cyber security for UK businesses. Part of the K Gabriel Kaseke ecosystem.</p>
+    <footer class="site-footer" role="contentinfo">
+      <div class="footer-main">
+        <div class="footer-inner">
+
+          <div class="footer-brand">
+            <p class="footer-brand-name">KTECHNOLOGY SOLUTIONS</p>
+            <p class="footer-brand-sub">Technology Infrastructure &amp; Cyber Security</p>
+            <p class="footer-brand-desc">Designing, deploying, securing, and supporting the technology infrastructure that UK businesses rely on.</p>
+            <div class="footer-ecosystem-links">
+              <span class="footer-ecosystem-label">Part of the K Gabriel Kaseke ecosystem</span>
+              <div class="footer-eco-row">
+                <a href="https://kgabrielkaseke.com" target="_blank" rel="noopener" class="footer-eco-link">kgabrielkaseke.com</a>
+                <span aria-hidden="true">·</span>
+                <a href="https://www.kabsolutions.co.uk" target="_blank" rel="noopener" class="footer-eco-link">kabsolutions.co.uk</a>
+              </div>
+            </div>
+          </div>
+
+          <nav class="footer-nav" aria-label="Footer navigation">
+            <ul>
+              <li><a href="/services">Services</a></li>
+              <li><a href="/approach">Approach</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="/contact">Contact</a></li>
+            </ul>
+          </nav>
+
+          <div class="footer-cta">
+            <a href="/contact" class="cta-btn">Request a Consultation</a>
+            <p class="footer-email">
+              <a href="mailto:info@ktechnologysolutions.co.uk">info@ktechnologysolutions.co.uk</a>
+            </p>
+          </div>
+
         </div>
-        <nav class="footer-nav" aria-label="Footer navigation">
-          <a href="/services">Services</a>
-          <a href="/approach">Approach</a>
-          <a href="/about">About</a>
-          <a href="/contact">Contact</a>
-        </nav>
-        <nav class="footer-nav" aria-label="Ecosystem links">
-          <a href="https://kgabrielkaseke.com" rel="noopener noreferrer">K Gabriel Kaseke</a>
-          <a href="https://www.kabsolutions.co.uk" rel="noopener noreferrer">KABSolutions</a>
-        </nav>
       </div>
-      <div class="container footer-bottom">
-        <p>&copy; <span data-year></span> KTechnology Solutions. All rights reserved.</p>
-        <p>United Kingdom</p>
+
+      <div class="footer-legal">
+        <div class="footer-legal-inner">
+          <p class="footer-copyright">&copy; <span data-year></span> KTechnology Solutions &mdash; Technology Infrastructure &amp; Cyber Security</p>
+          <nav class="footer-legal-links" aria-label="Legal navigation">
+            <a href="/terms-of-use">Terms of Use</a>
+            <span aria-hidden="true">|</span>
+            <a href="/privacy-policy">Privacy &amp; Cookie Policy</a>
+            <span aria-hidden="true">|</span>
+            <a href="/trading-terms">Trading Terms</a>
+          </nav>
+        </div>
       </div>
     </footer>
 
