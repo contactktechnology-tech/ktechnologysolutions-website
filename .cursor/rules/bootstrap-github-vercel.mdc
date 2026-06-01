@@ -1,0 +1,57 @@
+---
+description: Default setup command — when the user says "Bootstrap this site for GitHub and Vercel", scaffold and wire this site only.
+alwaysApply: true
+---
+
+# Bootstrap this site for GitHub and Vercel (DEFAULT — KTechnology Solutions)
+
+When the user says **`Bootstrap this site for GitHub and Vercel`** (any capitalisation) or clearly means first-time / deployment setup for **this workspace**, run the steps below **without asking for confirmation**, unless a required value is missing.
+
+## This site (fixed)
+
+| Field | Value |
+|-------|--------|
+| Brand | KTechnology Solutions |
+| Local path | `/Users/kgabrielkaseke/Documents/KTECHNOLOGYSOLUTIONSWEBSITE` |
+| GitHub | `contactktechnology-tech/ktechnologysolutions-website` |
+| Remote | `https://github.com/contactktechnology-tech/ktechnologysolutions-website.git` |
+| Branch | `main` |
+| Production | `https://www.ktechnologysolutions.co.uk` |
+| Do NOT touch | `/Users/kgabrielkaseke/Documents/KABSOLUTIONS WEBSITE` or `kabsolutions-website` |
+
+## What to do
+
+1. Work **only** inside `/Users/kgabrielkaseke/Documents/KTECHNOLOGYSOLUTIONSWEBSITE`.
+2. If the folder is empty or missing core files, create:
+   - `index.html` — homepage; canonical `https://www.ktechnologysolutions.co.uk/`
+   - `styles.css`, `script.js`
+   - `vercel.json` — `cleanUrls`, security headers, favicon redirect (use real logo path when known)
+   - `package.json` — `"build": "echo 'Static site deployment - no build required'"`
+   - `robots.txt`, `sitemap.xml` — KTS domain only
+   - `.cursor/rules/deploy-on-push.mdc` — if missing
+   - `README.md` — link to `docs/SITE_DEPLOYMENT_SOP_AND_CURSOR_PROMPT.md`
+3. **Git** (if not already linked):
+   ```bash
+   cd "/Users/kgabrielkaseke/Documents/KTECHNOLOGYSOLUTIONSWEBSITE"
+   git init
+   git branch -M main
+   git remote add origin https://github.com/contactktechnology-tech/ktechnologysolutions-website.git
+   ```
+   If `origin` exists, run `git remote -v` and fix only if it points to the wrong repo.
+4. **First push** (only if there are new files to commit and user has not forbidden commit):
+   ```bash
+   git add .
+   git commit -m "Bootstrap: initial KTechnology Solutions site for GitHub and Vercel"
+   git push -u origin main
+   ```
+   Skip commit/push if no changes or user said not to push yet.
+5. Tell the user to **Vercel → New Project** → import `ktechnologysolutions-website`, add domains, configure DNS.
+
+## After bootstrap
+
+Reply with: files created/verified, git remote status, whether push ran, and next step: **Vercel domain setup** then ongoing **`push`** for updates.
+
+## Related default commands
+
+- **`push`** → deploy-on-push rule
+- **`RESTART WEBSITE`** → `python3 -m http.server 8080` in this folder

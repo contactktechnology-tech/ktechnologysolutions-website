@@ -1,0 +1,17 @@
+{
+  "name": "ktechnologysolutions-website",
+  "version": "1.0.0",
+  "description": "KTechnology Solutions static marketing site",
+  "private": true,
+  "scripts": {
+    "build": "echo 'Static site deployment - no build required'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/contactktechnology-tech/ktechnologysolutions-website.git"
+  },
+  "homepage": "https://www.ktechnologysolutions.co.uk/",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}

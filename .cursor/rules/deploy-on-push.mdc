@@ -1,0 +1,26 @@
+---
+description: When the user says PUSH or push, commit and push for Vercel deployment.
+alwaysApply: true
+---
+
+# Deploy on "PUSH" / "push" (KTechnology Solutions)
+
+When the user message is **only** `PUSH`, `push`, or clearly means "deploy now", run without asking for confirmation:
+
+```bash
+cd "/Users/kgabrielkaseke/Documents/KTECHNOLOGYSOLUTIONSWEBSITE"
+git add .
+git commit -m "Test auto deployment"
+git push
+```
+
+## Git safety
+
+- Do not commit `.env` or credential files.
+- If there are no changes, report that and skip an empty commit.
+- Do not force-push unless explicitly requested.
+- If the user provides a different commit message in the same message, use their message instead of `Test auto deployment`.
+
+## After push
+
+Confirm commit hash and `origin/main`. Mention Vercel dashboard and https://www.ktechnologysolutions.co.uk

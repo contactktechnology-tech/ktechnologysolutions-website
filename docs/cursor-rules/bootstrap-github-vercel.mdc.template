@@ -1,0 +1,39 @@
+---
+description: Default setup command — when the user says "Bootstrap this site for GitHub and Vercel", scaffold and wire this site only.
+alwaysApply: true
+---
+
+# Bootstrap this site for GitHub and Vercel (DEFAULT)
+
+When the user says **`Bootstrap this site for GitHub and Vercel`** (any capitalisation), run the steps below for **this workspace only**.
+
+## This site — REPLACE BEFORE USE
+
+| Field | Value |
+|-------|--------|
+| Brand | {{BRAND_NAME}} |
+| Local path | {{LOCAL_FOLDER_PATH}} |
+| GitHub | {{GITHUB_ORG}}/{{GITHUB_REPO}} |
+| Remote | {{GIT_REMOTE_URL}} |
+| Branch | `main` |
+| Production | `https://{{CANONICAL_HOST}}` |
+| Do NOT touch | {{SIBLING_PROJECT_PATH}} / {{SIBLING_REPO}} |
+
+## What to do
+
+1. Work only inside `{{LOCAL_FOLDER_PATH}}`.
+2. If empty or missing core files, create: `index.html`, `styles.css`, `script.js`, `vercel.json`, `package.json`, `robots.txt`, `sitemap.xml`, `.cursor/rules/deploy-on-push.mdc`, `.cursor/rules/bootstrap-github-vercel.mdc` (this file, filled in).
+3. Git init / remote if needed; `git remote -v` must show only `{{GIT_REMOTE_URL}}`.
+4. First push only if appropriate:
+   ```bash
+   cd "{{LOCAL_FOLDER_PATH}}"
+   git add .
+   git commit -m "Bootstrap: initial {{BRAND_NAME}} site for GitHub and Vercel"
+   git push -u origin main
+   ```
+5. Remind user: **Vercel → New Project** → import `{{GITHUB_REPO}}` → add domains → DNS.
+
+## Related default commands
+
+- **`push`** → deploy-on-push.mdc
+- **`RESTART WEBSITE`** → `python3 -m http.server 8080`

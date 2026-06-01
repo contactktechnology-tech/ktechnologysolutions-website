@@ -1,0 +1,20 @@
+---
+description: When the user says PUSH or push, commit and push for Vercel deployment.
+alwaysApply: true
+---
+
+# Deploy on "PUSH" / "push"
+
+When the user says **only** `PUSH`, `push`, or clearly means deploy now:
+
+```bash
+cd "{{LOCAL_FOLDER_PATH}}"
+git add .
+git commit -m "Test auto deployment"
+git push
+```
+
+- No secrets in commits; no empty commits; no force-push unless requested.
+- User provides a message → use their message.
+
+After push: commit hash, `origin/main`, https://{{CANONICAL_HOST}}
