@@ -2691,3 +2691,10 @@ html:not(.js) .nav-item--dropdown:focus-within > .nav-panel {
     grid-template-columns: 1fr;
   }
 }
+
+.ecosystem-section .eyebrow,
+.ecosystem-section h2 {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}

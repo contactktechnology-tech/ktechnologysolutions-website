@@ -75,3 +75,13 @@ Read-only. Repo confirmed (`contactktechnology-tech/ktechnologysolutions-website
 - Added: `insights/template.html` (`/insights/template`). Shared article template for owner-written field notes. `noindex, nofollow`; not linked; not in the sitemap. Placeholders by design.
 - Modified: `contact.html`. The existing Formspree form (same endpoint, same `_subject`/`_next`) is extended into a qualification gateway. It asks for the Plan's fields: organisation, sector, number of locations, approximate user/device estate, current IT arrangement, existing provider or internal IT status, primary problem, required outcome, urgency, relevant infrastructure, security concerns, and project or ongoing requirement. The same list is shown as a "What we will ask" checklist. The primary problem keeps `name="message"` for continuity. The existing "What happens next" steps and direct email are kept. No backend added and no new contact details. The area-of-interest list now includes the three expansion disciplines.
 - Modified: `sitemap.xml` (+1: `/insights`). Templates are excluded.
+
+## Phase 8 — Home page refresh (2026-09-26)
+
+- Modified: `index.html`
+  - Hero and authority strip kept verbatim (headline structure unchanged). The ambient cyber-blue glow is deepened in CSS.
+  - Discipline grid: the eight core cards now link to their own pages (whole card clickable), followed by the three expansion disciplines. The heading reads "Eleven Disciplines. One Partner."
+  - Added an Engagement Models strip (five models linked to `/engagement` anchors) and a Sectors strip (seven sectors plus "All Sectors"), which replaces the "Who We Work With" list.
+  - Ecosystem panel and consultation CTA kept.
+  - JSON-LD: the existing `ProfessionalService` block is kept, and an `Organization` block is added (name, url, logo, email only; no ratings or reviews). This block has been present since Phase 2.
+- Modified: `styles.css`. The ecosystem section's eyebrow and heading are now centred to match its rule and intro. Section rhythm alternates the void background with the derived `--kt-band` surface.
