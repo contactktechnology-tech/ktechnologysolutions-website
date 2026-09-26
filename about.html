@@ -10,13 +10,22 @@
     <title>About | KTechnology Solutions — Technology Infrastructure</title>
     <link rel="canonical" href="https://www.ktechnologysolutions.co.uk/about">
     <link rel="icon" href="/assets/ktechnology-header-logo.png" type="image/png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="KTechnology Solutions">
+    <meta property="og:title" content="About | KTechnology Solutions — Technology Infrastructure">
+    <meta
+      property="og:description"
+      content="About KTechnology Solutions — technology infrastructure and cyber security for UK organisations, part of the K Gabriel Kaseke business ecosystem."
+    >
+    <meta property="og:url" content="https://www.ktechnologysolutions.co.uk/about">
+    <meta property="og:image" content="https://www.ktechnologysolutions.co.uk/assets/ktechnology-header-logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Bentham&family=Raleway:wght@300;400;500;600&family=Lato:ital,wght@0,300;0,400;1,300&display=swap"
       rel="stylesheet"
     >
-    <link rel="stylesheet" href="/styles.css?v=20260601-full-v1">
+    <link rel="stylesheet" href="/styles.css?v=20260926-exp1">
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -25,8 +34,8 @@
       <div class="header-banner">
         <a href="/" aria-label="KTechnology Solutions home">
           <img
-            src="/assets/ktechnology-header-logo.png?v=20260601-full-v1"
-            alt="KTechnology Solutions — IT Infrastructure and Cyber Security — Business Systems Deployment and Network Architecture"
+            src="/assets/ktechnology-solutions-logo.svg?v=20260926-exp1"
+            alt="KTechnology Solutions"
             width="784"
             height="295"
             decoding="async"
@@ -39,13 +48,61 @@
           <span></span><span></span><span></span>
           <span class="sr-only">Open menu</span>
         </button>
-        <div class="nav-links" id="site-menu">
-          <a href="/">Home</a>
-          <a href="/services">Services</a>
-          <a href="/approach">Approach</a>
-          <a href="/about" aria-current="page">About</a>
-          <a href="/contact" class="nav-cta cta-btn">Request a Consultation</a>
-        </div>
+        <ul class="nav-links" id="site-menu">
+          <li class="nav-item nav-item--dropdown">
+            <button class="nav-trigger" type="button" aria-expanded="false" aria-controls="nav-panel-services">Services <svg viewBox="0 0 10 10" aria-hidden="true" focusable="false"><path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></button>
+            <div class="nav-panel nav-panel--wide" id="nav-panel-services">
+              <div>
+                <span class="nav-panel-label">Core disciplines</span>
+                <ul>
+                  <li><a href="/services/infrastructure">IT Infrastructure</a></li>
+                  <li><a href="/services/cyber-security">Cyber Security</a></li>
+                  <li><a href="/services/network">Network Architecture</a></li>
+                  <li><a href="/services/cloud-devices">Cloud &amp; Devices</a></li>
+                  <li><a href="/services/business-systems">Business Systems</a></li>
+                  <li><a href="/services/communications">Communications</a></li>
+                  <li><a href="/services/support">Corporate Support</a></li>
+                  <li><a href="/services/resilience">Operational Resilience</a></li>
+                </ul>
+              </div>
+              <div>
+                <span class="nav-panel-label">Expansion disciplines</span>
+                <ul>
+                  <li><a href="/services/ai-readiness">AI Readiness &amp; Governance</a></li>
+                  <li><a href="/services/sourcing">Technology Sourcing &amp; Lifecycle</a></li>
+                  <li><a href="/services/field-delivery">Field &amp; Project Delivery</a></li>
+                </ul>
+                <span class="nav-panel-label">Overview</span>
+                <ul>
+                  <li><a href="/services" class="nav-panel-all">View all services</a></li>
+                  <li><a href="/engagement" class="nav-panel-all">How we engage</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item nav-item--dropdown">
+            <button class="nav-trigger" type="button" aria-expanded="false" aria-controls="nav-panel-sectors">Sectors <svg viewBox="0 0 10 10" aria-hidden="true" focusable="false"><path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></button>
+            <div class="nav-panel" id="nav-panel-sectors">
+              <div>
+                <span class="nav-panel-label">Who we work with</span>
+                <ul>
+                  <li><a href="/sectors/professional-services">Professional Services &amp; SMEs</a></li>
+                  <li><a href="/sectors/healthcare-care">Healthcare, Clinics &amp; Care</a></li>
+                  <li><a href="/sectors/hospitality-retail">Hospitality &amp; Retail</a></li>
+                  <li><a href="/sectors/facilities-management">Facilities Management</a></li>
+                  <li><a href="/sectors/multi-site">Offices &amp; Multi-site Businesses</a></li>
+                  <li><a href="/sectors/public-sector">Public Sector &amp; Local Authorities</a></li>
+                  <li><a href="/sectors/delivery-partners">Delivery Partners &amp; Larger Organisations</a></li>
+                  <li><a href="/sectors" class="nav-panel-all">View all sectors</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li><a href="/approach">Approach</a></li>
+          <li><a href="/insights">Insights</a></li>
+          <li><a href="/about" aria-current="page">About</a></li>
+          <li class="nav-item--cta"><a href="/contact" class="nav-cta cta-btn">Request a Consultation</a></li>
+        </ul>
       </nav>
     </header>
 
@@ -106,7 +163,7 @@
       </section>
     </main>
 
-    <footer class="site-footer" role="contentinfo">
+    <footer class="site-footer">
       <div class="footer-main">
         <div class="footer-inner">
 
@@ -125,11 +182,27 @@
           </div>
 
           <nav class="footer-nav" aria-label="Footer navigation">
+            <span class="footer-nav-label">Explore</span>
             <ul>
               <li><a href="/services">Services</a></li>
+              <li><a href="/engagement">Engagement Models</a></li>
               <li><a href="/approach">Approach</a></li>
+              <li><a href="/insights">Insights</a></li>
               <li><a href="/about">About</a></li>
               <li><a href="/contact">Contact</a></li>
+            </ul>
+          </nav>
+
+          <nav class="footer-nav" aria-label="Sectors">
+            <span class="footer-nav-label">Sectors</span>
+            <ul>
+              <li><a href="/sectors/professional-services">Professional Services &amp; SMEs</a></li>
+              <li><a href="/sectors/healthcare-care">Healthcare, Clinics &amp; Care</a></li>
+              <li><a href="/sectors/hospitality-retail">Hospitality &amp; Retail</a></li>
+              <li><a href="/sectors/facilities-management">Facilities Management</a></li>
+              <li><a href="/sectors/multi-site">Offices &amp; Multi-site Businesses</a></li>
+              <li><a href="/sectors/public-sector">Public Sector &amp; Local Authorities</a></li>
+              <li><a href="/sectors/delivery-partners">Delivery Partners &amp; Larger Organisations</a></li>
             </ul>
           </nav>
 
@@ -157,6 +230,6 @@
       </div>
     </footer>
 
-    <script type="module" src="/script.js"></script>
+    <script type="module" src="/script.js?v=20260926-exp1"></script>
   </body>
 </html>
