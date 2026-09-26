@@ -1,6 +1,6 @@
 # KTechnology Solutions — Site Expansion Changelog
 
-Branch: `cursor/site-expansion-2346` (draft PR against `main`; not merged, never pushed to `main`). Production release needs the owner's final go.
+Branch: `cursor/site-expansion-2346` (PR #1 against `main`; ready for final production review / owner visual review; not merged, never pushed to `main`). Production release needs the owner's final go.
 
 Standing "explicitly not changed" list for every phase unless stated: `vercel.json`, `robots.txt` rules, `package.json`, `package-lock.json`, legal page body content (`privacy-policy.html`, `terms-of-use.html`, `trading-terms.html` `<main>`), existing assets (nothing deleted or renamed), Formspree endpoint, contact email.
 
