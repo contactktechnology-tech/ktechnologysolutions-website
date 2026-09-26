@@ -47,3 +47,10 @@ Read-only. Repo confirmed (`contactktechnology-tech/ktechnologysolutions-website
 - The Plan's commercial ladder shown as a clean five-step progression: Entry → Diagnostic → Project → Recurring → Strategic, with the principle "assessment, recommendation, implementation, management, improvement" linked to `/approach`. States there is no obligation to move beyond the first step.
 - No prices, no SLA or response figures.
 - Modified: `sitemap.xml` (+1).
+
+## Phase 5 — Sectors (2026-09-26)
+
+- Added: `sectors.html` (`/sectors` hub) and seven sector pages: `sectors/professional-services.html`, `healthcare-care.html`, `hospitality-retail.html`, `facilities-management.html`, `multi-site.html`, `public-sector.html`, `delivery-partners.html`.
+- Each sector page is built from the Plan's "primary opportunity" line (shown as the "Where we help most" statement), plus general typical pressures (no statistics, no named clients), the disciplines that apply and the engagement models that suit. The public-sector page states that we take part only where procurement conditions permit a provider of our size.
+- Card link text shortened to "Explore Service" / "View Sector" / "Model Details", with the full name as screen-reader-only text (unique accessible names; restores the original short label style).
+- Modified: `sitemap.xml` (+8).
