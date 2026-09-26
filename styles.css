@@ -2668,7 +2668,8 @@ html:not(.js) .nav-item--dropdown:focus-within > .nav-panel {
 /* Card grids draw hairlines per card, so an incomplete last row leaves clean space. */
 .services-grid,
 .chip-grid,
-.strip-grid {
+.strip-grid,
+.topic-list {
   gap: 0;
   background: none;
   border: none;
@@ -2678,7 +2679,8 @@ html:not(.js) .nav-item--dropdown:focus-within > .nav-panel {
 
 .services-grid > *,
 .chip-grid > *,
-.strip-grid > * {
+.strip-grid > *,
+.topic-list > * {
   border-right: 1px solid var(--kt-border);
   border-bottom: 1px solid var(--kt-border);
 }
