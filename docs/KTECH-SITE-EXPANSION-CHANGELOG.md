@@ -31,3 +31,12 @@ Read-only. Repo confirmed (`contactktechnology-tech/ktechnologysolutions-website
 - Modified: `sitemap.xml` (regenerated; same 8 URLs, lastmod updated).
 - Nav links to pages built in Phases 3–7 resolve from those phases onward.
 - Verified: keyboard open/Tab/Escape on dropdowns; mobile overlay covers the viewport with the close control on top; Escape closes it and returns focus to the toggle.
+
+## Phase 3 — Discipline pages (2026-09-26)
+
+- Added: `services/infrastructure.html`, `services/cyber-security.html`, `services/network.html`, `services/cloud-devices.html`, `services/business-systems.html`, `services/communications.html`, `services/support.html`, `services/resilience.html` (8 core) and `services/ai-readiness.html`, `services/sourcing.html`, `services/field-delivery.html` (3 expansion — owner-approved in the Plan). All use one shared structure: breadcrumb, eyebrow + heading with italic promise, the problem, scoped capabilities, engagement models, deliverables, related disciplines, consultation CTA.
+- Modified: `services.html` → disciplines hub. Every old anchor (`#infrastructure #cyber #network #cloud #systems #comms #support #resilience`) is kept on its hub card, which links to the new page; new anchors `#ai-readiness #sourcing #field-delivery`.
+- Modified: `sitemap.xml` (+11), `styles.css` (4-column discipline grid at desktop — the previous auto-fill grid left an empty cell for 8 cards at 1440px; card grids now draw per-card hairlines).
+- Copy sources: existing `/services` copy for the core eight, the Plan's scopes for all eleven. AI page states the KABSolutions boundary; Sourcing states vendor neutrality with no partner claims. Capability "Cyber Essentials readiness" is worded as *preparation for assessment* (no certification claim).
+- Copy change: Operational Resilience tagline "Always operational" → "Audited. Resilient. Prepared." (an absolute availability promise conflicts with the no-guarantee rule).
+- Tints: AI = `--kt-tint-ai`, SRC = `--kt-tint-src`, FLD = `--kt-tint-fld` (derived; see Phase 2). The existing eight keep their mapping (gold default, SEC blue, RES green).
