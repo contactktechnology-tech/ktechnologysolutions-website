@@ -920,7 +920,7 @@ html:not(.js) .nav-item--dropdown:focus-within > .nav-panel {
 }
 
 .ecosystem-card--current {
-  background: rgba(210, 183, 123, 0.03);
+  background: color-mix(in srgb, var(--kt-gold) 4%, var(--kt-bg));
   border-top: 2px solid var(--kt-gold);
 }
 
@@ -2194,7 +2194,7 @@ html:not(.js) .nav-item--dropdown:focus-within > .nav-panel {
 /* Lifecycle diagram and pipeline */
 .lifecycle {
   margin: 56px auto 0;
-  max-width: 620px;
+  max-width: 760px;
 }
 
 .lifecycle svg {

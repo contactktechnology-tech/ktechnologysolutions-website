@@ -116,74 +116,136 @@
         </div>
       </section>
 
-      <section class="page-section">
+      <section class="page-section" aria-labelledby="lifecycle-heading">
         <div class="section-inner">
-          <span class="eyebrow">Delivery Process</span>
+          <span class="eyebrow">Delivery Lifecycle</span>
           <div class="section-sep section-sep--left" aria-hidden="true"></div>
-          <h2>A Structured Approach to<br><em>Technology Delivery</em></h2>
-
-          <div class="approach-timeline">
-
-            <div class="approach-step">
-              <div class="step-marker">
-                <span class="step-number">01</span>
-                <div class="step-line" aria-hidden="true"></div>
-              </div>
-              <div class="step-content">
-                <h3>Discovery &amp; Infrastructure Assessment</h3>
-                <p>We assess the current state of your technology environment — existing infrastructure, connectivity, devices, systems, security posture, and any known constraints or vulnerabilities. We ask questions that matter and document what we find.</p>
-              </div>
+          <h2 id="lifecycle-heading">Six Stages, <em>One Continuous Cycle</em></h2>
+          <p class="section-intro">Assess → Design → Deploy → Protect → Support → Improve. Improvement feeds the next assessment, so the environment keeps getting clearer rather than more complicated.</p>
+          <figure class="lifecycle">
+            <svg viewBox="-80 0 760 600" role="img" aria-labelledby="lc-title lc-desc">
+              <title id="lc-title">Delivery lifecycle</title>
+              <desc id="lc-desc">A continuous six-stage cycle: Assess, Design, Deploy, Protect, Support, Improve, then back to Assess.</desc>
+              <style>
+                .lc-ring { fill: none; stroke: #d2b77b; stroke-opacity: 0.35; stroke-width: 1; }
+                .lc-inner { fill: none; stroke: #d2b77b; stroke-opacity: 0.12; stroke-width: 1; stroke-dasharray: 2 6; }
+                .lc-node { fill: #050816; stroke: #d2b77b; stroke-width: 1; }
+                .lc-num { font-family: Bentham, Georgia, serif; font-size: 20px; fill: #d2b77b; text-anchor: middle; }
+                .lc-label { font-family: Raleway, sans-serif; font-weight: 600; font-size: 14px; letter-spacing: 3px; fill: #f5f1e8; }
+                .lc-arrow { fill: none; stroke: #d2b77b; stroke-width: 1.2; }
+                .lc-centre { font-family: Bentham, Georgia, serif; font-size: 22px; fill: #f5f1e8; text-anchor: middle; }
+                .lc-centre-sub { font-family: Raleway, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 3px; fill: #d2b77b; text-anchor: middle; }
+                @media (max-width: 640px) {
+                  .lc-label { font-size: 21px; letter-spacing: 1px; }
+                  .lc-num { font-size: 26px; }
+                }
+              </style>
+              <circle cx="300" cy="300" r="200" class="lc-ring"/>
+              <circle cx="300" cy="300" r="120" class="lc-inner"/>
+              <path d="M-5 -6 L3 0 L-5 6" transform="translate(400.0 126.8) rotate(30)" class="lc-arrow"/>
+              <path d="M-5 -6 L3 0 L-5 6" transform="translate(500.0 300.0) rotate(90)" class="lc-arrow"/>
+              <path d="M-5 -6 L3 0 L-5 6" transform="translate(400.0 473.2) rotate(150)" class="lc-arrow"/>
+              <path d="M-5 -6 L3 0 L-5 6" transform="translate(200.0 473.2) rotate(210)" class="lc-arrow"/>
+              <path d="M-5 -6 L3 0 L-5 6" transform="translate(100.0 300.0) rotate(270)" class="lc-arrow"/>
+              <path d="M-5 -6 L3 0 L-5 6" transform="translate(200.0 126.8) rotate(330)" class="lc-arrow"/>
+              <circle cx="300.0" cy="100.0" r="34" class="lc-node"/>
+              <text x="300.0" y="107.0" class="lc-num">01</text>
+              <circle cx="473.2" cy="200.0" r="34" class="lc-node"/>
+              <text x="473.2" y="207.0" class="lc-num">02</text>
+              <circle cx="473.2" cy="400.0" r="34" class="lc-node"/>
+              <text x="473.2" y="407.0" class="lc-num">03</text>
+              <circle cx="300.0" cy="500.0" r="34" class="lc-node"/>
+              <text x="300.0" y="507.0" class="lc-num">04</text>
+              <circle cx="126.8" cy="400.0" r="34" class="lc-node"/>
+              <text x="126.8" y="407.0" class="lc-num">05</text>
+              <circle cx="126.8" cy="200.0" r="34" class="lc-node"/>
+              <text x="126.8" y="207.0" class="lc-num">06</text>
+              <text x="300.0" y="28.0" text-anchor="middle" class="lc-label">ASSESS</text>
+              <text x="521.2" y="205.0" text-anchor="start" class="lc-label">DESIGN</text>
+              <text x="521.2" y="405.0" text-anchor="start" class="lc-label">DEPLOY</text>
+              <text x="300.0" y="572.0" text-anchor="middle" class="lc-label">PROTECT</text>
+              <text x="78.8" y="405.0" text-anchor="end" class="lc-label">SUPPORT</text>
+              <text x="78.8" y="205.0" text-anchor="end" class="lc-label">IMPROVE</text>
+              <text x="300" y="296" class="lc-centre">Infrastructure</text>
+              <text x="300" y="324" class="lc-centre">before improvisation</text>
+              <text x="300" y="356" class="lc-centre-sub">CONTINUOUS CYCLE</text>
+            </svg>
+            <figcaption>The delivery lifecycle: each stage is documented before the next begins.</figcaption>
+          </figure>
+          <div class="lifecycle-list">
+            <div>
+              <h3>01 · Assess</h3>
+              <p>We assess the current state of your technology environment — infrastructure, connectivity, devices, systems, security posture, and any known constraints. We ask questions that matter and document what we find.</p>
             </div>
-
-            <div class="approach-step">
-              <div class="step-marker">
-                <span class="step-number">02</span>
-                <div class="step-line" aria-hidden="true"></div>
-              </div>
-              <div class="step-content">
-                <h3>Design &amp; Specification</h3>
-                <p>We design the right solution for your operational requirements — not the most complex, not the cheapest, but the most appropriate. Every design decision is documented and explained so your team understands what is being built and why.</p>
-              </div>
+            <div>
+              <h3>02 · Design</h3>
+              <p>We design the most appropriate solution for your operational requirements — not the most complex, not the cheapest. Every design decision is documented and explained.</p>
             </div>
-
-            <div class="approach-step">
-              <div class="step-marker">
-                <span class="step-number">03</span>
-                <div class="step-line" aria-hidden="true"></div>
-              </div>
-              <div class="step-content">
-                <h3>Deployment &amp; Configuration</h3>
-                <p>Implementation is managed with minimal disruption to operations. We configure, test, and verify every component before handover. Where migration is involved, we plan the transition carefully to protect continuity and data integrity.</p>
-              </div>
+            <div>
+              <h3>03 · Deploy</h3>
+              <p>Implementation is managed with minimal disruption. We configure, test and verify every component before handover, and plan migrations carefully to protect continuity and data integrity.</p>
             </div>
-
-            <div class="approach-step">
-              <div class="step-marker">
-                <span class="step-number">04</span>
-                <div class="step-line" aria-hidden="true"></div>
-              </div>
-              <div class="step-content">
-                <h3>Handover &amp; Documentation</h3>
-                <p>Every engagement concludes with clear documentation — what was built, how it is configured, and what your team needs to know. You own the knowledge, not just the hardware. Ongoing support arrangements are agreed separately.</p>
-              </div>
+            <div>
+              <h3>04 · Protect</h3>
+              <p>Security controls, backup and recovery are configured and verified as part of delivery — not added as an afterthought.</p>
             </div>
-
+            <div>
+              <h3>05 · Support</h3>
+              <p>Every engagement concludes with clear documentation and handover. Ongoing support is agreed separately, as managed support or on request.</p>
+            </div>
+            <div>
+              <h3>06 · Improve</h3>
+              <p>Regular reviews identify what to refine, replace or plan for next — feeding back into the next assessment.</p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="page-section" style="border-top: 1px solid var(--kt-border);">
+      <section class="page-section band" aria-labelledby="pipeline-heading">
         <div class="section-inner">
-          <span class="eyebrow">Standards</span>
+          <span class="eyebrow">How an Engagement Progresses</span>
           <div class="section-sep section-sep--left" aria-hidden="true"></div>
-          <h2>What We Will Never Do</h2>
-          <div class="client-grid" style="margin-top: 40px;">
-            <div class="client-item"><span class="client-mark" aria-hidden="true">—</span><p>Recommend more complexity than the situation requires</p></div>
-            <div class="client-item"><span class="client-mark" aria-hidden="true">—</span><p>Deploy without testing and verification</p></div>
-            <div class="client-item"><span class="client-mark" aria-hidden="true">—</span><p>Leave a system undocumented at handover</p></div>
-            <div class="client-item"><span class="client-mark" aria-hidden="true">—</span><p>Propose solutions that create unnecessary vendor dependency</p></div>
-            <div class="client-item"><span class="client-mark" aria-hidden="true">—</span><p>Use technical language to obscure rather than clarify</p></div>
-            <div class="client-item"><span class="client-mark" aria-hidden="true">—</span><p>Disappear after deployment without a clear next step</p></div>
+          <h2 id="pipeline-heading">From Consultation <em>to Ongoing Relationship</em></h2>
+          <p class="section-intro">Every engagement follows the same visible sequence, so you always know which stage you are in and what comes next.</p>
+          <ol class="pipeline">
+            <li><span>01</span>Consultation</li>
+            <li><span>02</span>Discovery</li>
+            <li><span>03</span>Assessment</li>
+            <li><span>04</span>Scope</li>
+            <li><span>05</span>Proposal</li>
+            <li><span>06</span>Delivery</li>
+            <li><span>07</span>Review</li>
+            <li><span>08</span>Ongoing Relationship</li>
+          </ol>
+          <p class="small-note">You can stop after any stage. A consultation or an assessment is a complete piece of work in its own right. See <a href="/engagement" class="cta-secondary">engagement models</a>.</p>
+        </div>
+      </section>
+
+      <section class="page-section band" aria-labelledby="never-heading">
+          <div class="section-inner">
+            <span class="eyebrow">Standards</span>
+            <div class="section-sep section-sep--left" aria-hidden="true"></div>
+            <h2 id="never-heading">What We Will Never Do</h2>
+            <div class="client-grid" style="margin-top: 40px;">
+              <div class="client-item"><span class="client-mark" aria-hidden="true">—</span><p>Recommend more complexity than the situation requires</p></div>
+              <div class="client-item"><span class="client-mark" aria-hidden="true">—</span><p>Deploy without testing and verification</p></div>
+              <div class="client-item"><span class="client-mark" aria-hidden="true">—</span><p>Leave a system undocumented at handover</p></div>
+              <div class="client-item"><span class="client-mark" aria-hidden="true">—</span><p>Propose solutions that create unnecessary vendor dependency</p></div>
+              <div class="client-item"><span class="client-mark" aria-hidden="true">—</span><p>Use technical language to obscure rather than clarify</p></div>
+              <div class="client-item"><span class="client-mark" aria-hidden="true">—</span><p>Disappear after deployment without a clear next step</p></div>
+            </div>
+          </div>
+        </section>
+
+      <section class="page-section cta-section" aria-label="Consultation">
+        <div class="section-inner cta-center">
+          <span class="eyebrow">Technology Consultation</span>
+          <div class="section-sep" aria-hidden="true"></div>
+          <h2>Ready to Strengthen Your<br><em>Technology Foundation?</em></h2>
+          <p>Tell us about your organisation and the technology challenge you are working through. We will respond with clear, proportionate next steps.</p>
+          <div class="cta-actions">
+            <a href="/contact" class="cta-btn">Request a Consultation</a>
+            <a href="/engagement" class="cta-secondary">Compare Engagement Models</a>
           </div>
         </div>
       </section>

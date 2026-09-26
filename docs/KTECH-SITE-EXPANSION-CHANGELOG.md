@@ -54,3 +54,16 @@ Read-only. Repo confirmed (`contactktechnology-tech/ktechnologysolutions-website
 - Each sector page is built from the Plan's "primary opportunity" line (shown as the "Where we help most" statement), plus general typical pressures (no statistics, no named clients), the disciplines that apply and the engagement models that suit. The public-sector page states that we take part only where procurement conditions permit a provider of our size.
 - Card link text shortened to "Explore Service" / "View Sector" / "Model Details", with the full name as screen-reader-only text (unique accessible names; restores the original short label style).
 - Modified: `sitemap.xml` (+8).
+
+## Phase 6 — Approach lifecycle + About "Why KTechnology" (2026-09-26)
+
+- Modified: `approach.html`
+  - The four-step timeline is replaced by the six-stage lifecycle (Assess → Design → Deploy → Protect → Support → Improve) as an inline SVG: gold linework, Raleway labels, a text title and description for assistive technology, plus a text list of every stage. Stage copy reuses the existing four step descriptions.
+  - Added "How an engagement progresses", the Plan's pipeline: Consultation → Discovery → Assessment → Scope → Proposal → Delivery → Review → Ongoing Relationship.
+  - The existing "What We Will Never Do" section is kept verbatim.
+- Modified: `about.html`
+  - Hero and founder section kept verbatim.
+  - The three "Operating Principles" are replaced by "Why KTechnology", using the four locked pillars exactly: Infrastructure before improvisation · Documented, not dependent · Proportionate, not oversold · Outcomes, not activity. Pillar wording comes from the Plan.
+  - Added a group-architecture panel covering kgabrielkaseke.com (Strategic Authority), KABSolutions (Business Intelligence & Analytics) and KTechnology Solutions (Technology Infrastructure & Cyber Security, "You are here"). It uses the existing ecosystem-card pattern and the existing external-link attributes.
+- Modified: `styles.css`. The "You are here" card background is now solid (`color-mix(gold 4%, void)`); it previously showed the grid's hairline colour through a transparent fill and read as brown. Lifecycle labels are enlarged on phones.
+- No technology list, accreditations or product names added.
