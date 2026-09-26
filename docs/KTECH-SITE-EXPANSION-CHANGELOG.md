@@ -40,3 +40,10 @@ Read-only. Repo confirmed (`contactktechnology-tech/ktechnologysolutions-website
 - Copy sources: existing `/services` copy for the core eight, the Plan's scopes for all eleven. AI page states the KABSolutions boundary; Sourcing states vendor neutrality with no partner claims. Capability "Cyber Essentials readiness" is worded as *preparation for assessment* (no certification claim).
 - Copy change: Operational Resilience tagline "Always operational" → "Audited. Resilient. Prepared." (an absolute availability promise conflicts with the no-guarantee rule).
 - Tints: AI = `--kt-tint-ai`, SRC = `--kt-tint-src`, FLD = `--kt-tint-fld` (derived; see Phase 2). The existing eight keep their mapping (gold default, SEC blue, RES green).
+
+## Phase 4 — Engagement Models (2026-09-26)
+
+- Added: `engagement.html` (`/engagement`). All five models (Managed Support, Project Delivery, Advisory & Audit, Technology Sourcing, Partner & Subcontract Delivery) in a comparison layout — what it is, typical work, best suited when, usual starting point. Stable anchors: `#managed-support #project-delivery #advisory-audit #technology-sourcing #partner-delivery #ladder`.
+- The Plan's commercial ladder shown as a clean five-step progression: Entry → Diagnostic → Project → Recurring → Strategic, with the principle "assessment, recommendation, implementation, management, improvement" linked to `/approach`. States there is no obligation to move beyond the first step.
+- No prices, no SLA or response figures.
+- Modified: `sitemap.xml` (+1).
